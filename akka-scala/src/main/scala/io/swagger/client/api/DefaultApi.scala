@@ -17,12 +17,9 @@ object DefaultApi {
    * 
    * Expected answers:
    *   code 202 : ListOfConnectionTypes (Success)
-   * 
-   * @param componentType 
    */
-  def componentTypesGet(componentType: Option[ListOfConnectionTypes] = None): ApiRequest[ListOfConnectionTypes] =
+  def componentTypesGet(): ApiRequest[ListOfConnectionTypes] =
     ApiRequest[ListOfConnectionTypes](ApiMethods.GET, "https://virtserver.swaggerhub.com/lukeAwesome/ecocomposer-meta-model/1.0.0", "/component_types", "application/json")
-      .withBody(componentType)
       .withSuccessResponse[ListOfConnectionTypes](202)
       
 
