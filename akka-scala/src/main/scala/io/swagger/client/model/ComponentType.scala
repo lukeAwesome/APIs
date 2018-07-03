@@ -12,7 +12,6 @@ import java.util.UUID
 
 case class ComponentType (
   id: Option[Int],
-  component: Option[String],
   name: Option[String],
   description: Option[String],
   iconId: Option[Int],
